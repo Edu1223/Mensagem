@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Missão Concluída</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:linear-gradient(#fff,#f8f5ef);font-family:Poppins,sans-serif;color:#3d2d22;display:flex;justify-content:center}
+.container{max-width:420px;padding:28px 24px;text-align:center}
+.lego{width:180px;animation:float 3s ease-in-out infinite;border-radius:12px;box-shadow:0 10px 20px rgba(0,0,0,0.1)}
+@keyframes float{50%{transform:translateY(-6px)}}
+h1{font-family:Caveat,cursive;font-size:54px;margin:8px 0}
+.sep{margin:20px auto;border-top:1px solid #e6d8bf;width:85%}
+.card{background:#f8edd7;border-radius:18px;padding:18px;margin-top:24px}
+.footer{margin-top:28px;font-size:.95rem;color:#5b4637}
+.fade{opacity:0;transform:translateY(12px);animation:show .7s forwards}
+.fade:nth-child(2){animation-delay:.3s}.fade:nth-child(3){animation-delay:.6s}
+@keyframes show{to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="fade">
+<h1>Parabéns!</h1>
+<p>Você concluiu a missão. 🥳</p>
+<p>O bonequinho está oficialmente montado.</p>
+</div>
+<div class="sep"></div>
+<div class="fade">
+<p>E, já que consegui convencer você a montar um monte de pecinhas, acho que posso aproveitar para fazer um convite...</p>
+<p><strong>Quando eu voltar da viagem...</strong></p>
+<p style="font-size:1.35rem"><strong>Gostaria de te convidar para jantar.</strong></p>
+<p>Sem QR Code escondido dessa vez. Kkkkk</p>
+<p>Só boa comida, boa conversa e a oportunidade de conhecer um pouco mais você.</p>
+</div>
+<div class="card fade">
+😊<br><br>
+<strong>Se topar, vou ficar muito feliz.</strong><br>
+Espero sua resposta.
+</div>
+<div class="sep"></div>
+<div class="footer">
+<b>Obs.:</b> Um gordinho nunca faz um convite para um restaurante ruim.<br>
+Isso afetaria toda a nossa reputação. 😉
+</div>
+</div>
+<script>
+lego.onclick=()=>{lego.style.transition="transform .6s";lego.style.transform="rotate(360deg)";
+setTimeout(()=>lego.style.transform="",650);}
+</script>
+</body>
+</html>
